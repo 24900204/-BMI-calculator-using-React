@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe, #f8fafc);
+  color: #172033;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  padding: 42px 20px 24px;
+}
+
+.icon {
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #2563eb;
+  color: white;
+  font-size: 32px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #64748b;
+}
+
+.card {
+  width: min(560px, 92%);
+  margin: 20px auto 35px;
+  padding: 32px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 8px;
+  font-weight: 700;
+}
+
+input {
+  padding: 14px 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+button {
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calculate {
+  flex: 1;
+  background: #2563eb;
+  color: white;
+}
+
+.reset {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 24px;
+  text-align: center;
+  background: #eff6ff;
+  border-radius: 16px;
+}
+
+.result h2 {
+  color: #475569;
+  font-size: 18px;
+}
+
+.bmi-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin: 8px 0;
+}
+
+.category {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background: #dbeafe;
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.formula {
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.guide {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.guide h3 {
+  margin-bottom: 12px;
+}
+
+.guide div {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  color: #475569;
+}
+
+.guide b {
+  color: #1e293b;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 22px 15px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+footer strong {
+  color: #172033;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    padding: 22px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
